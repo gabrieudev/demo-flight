@@ -32,10 +32,10 @@ router.get("/", protect, restrictTo("admin"), getAllUsers);
 
 router.post("/", protect, restrictTo("admin"), createUser);
 
-router.get("/:id", protect, restrictTo("admin"), getUserById);
+router.get("/:id", protect, restrictTo("admin", "regular"), getUserById);
 
-router.put("/:id", protect, restrictTo("admin"), updateUser);
+router.put("/:id", protect, restrictTo("admin", "regular"), updateUser);
 
-router.delete("/:id", protect, restrictTo("admin"), deleteUser);
+router.delete("/:id", protect, restrictTo("admin", "regular"), deleteUser);
 
 export default router;
