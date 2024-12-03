@@ -8,7 +8,7 @@ export const createUser = async (req, res) => {
     res.status(201).json(user);
   } catch (error) {
     if (error.name === "ZodError") {
-      return res.status(400).json({ errors: error.errors });
+      return res.status(400).json({ error: error.errors[0].message });
     }
     res.status(500).json({ error: error.message });
   }
@@ -38,7 +38,7 @@ export const updateUser = async (req, res) => {
     res.json(user);
   } catch (error) {
     if (error.name === "ZodError") {
-      return res.status(400).json({ errors: error.errors });
+      return res.status(400).json({ error: error.errors[0].message });
     }
     res.status(500).json({ error: error.message });
   }
