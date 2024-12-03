@@ -5,7 +5,7 @@ export const createUserSchema = z.object({
   login_email: z.string().email("Formato de email inválido").max(150),
   password: z
     .string()
-    .min(6, "A senha deve ter pelo menos 6 caracteres")
+    .min(5, "A senha deve ter pelo menos 5 caracteres")
     .max(255),
   user_type: z.enum(["admin", "regular"], {
     errorMap: () => ({
@@ -24,7 +24,7 @@ export const updateUserSchema = z
       .optional(),
     password: z
       .string()
-      .min(6, "A senha deve ter pelo menos 6 caracteres")
+      .min(5, "A senha deve ter pelo menos 5 caracteres")
       .max(255)
       .optional(),
     user_type: z
