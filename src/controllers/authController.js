@@ -1,6 +1,6 @@
-import { loginSchema } from "../schemas/loginSchema.js";
 import { User } from "../models/User.js";
-import jwt from "jsonwebtoken";
+import { loginSchema } from "../schemas/loginSchema.js";
+import { generateToken } from "../utils/jwtUtils.js";
 
 export const login = async (req, res) => {
   try {
@@ -12,9 +12,7 @@ export const login = async (req, res) => {
       },
     });
     if (user) {
-      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-        expiresIn: 300,
-      });
+      const token = generateToken({ id: user.id });
       return res.json({ token });
     }
     res.status(401).json({ error: "Credenciais inválidas" });
