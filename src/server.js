@@ -7,6 +7,7 @@ import aircraftRoutes from "./routes/aircraftRoutes.js";
 import flightRoutes from "./routes/flightRoutes.js";
 import passengerRoutes from "./routes/passengerRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import boardingPassRoutes from "./routes/boardingPassRoutes.js";
 import corsOptions from "./config/cors.js";
 import swaggerSpec from "./config/swagger.js";
 import swaggerUi from "swagger-ui-express";
@@ -24,6 +25,7 @@ app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/aircrafts", aircraftRoutes);
 app.use("/flights", flightRoutes);
+app.use("/boarding-passes", boardingPassRoutes);
 app.use("/passengers", passengerRoutes);
 
 async function startServer() {

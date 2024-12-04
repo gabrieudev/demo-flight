@@ -4,7 +4,7 @@ import { sequelize } from "../config/database.js";
 export const Passenger = sequelize.define(
   "passenger",
   {
-    flight_id: {
+    passenger_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
