@@ -8,7 +8,7 @@ import flightRoutes from "./routes/flightRoutes.js";
 import passengerRoutes from "./routes/passengerRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import corsOptions from "./config/cors.js";
-import swaggerSpec from "./config/swaggerConfig.js";
+import swaggerSpec from "./config/swagger.js";
 import swaggerUi from "swagger-ui-express";
 
 dotenv.config();

@@ -36,6 +36,22 @@ const swaggerDefinition = {
       name: "Auth",
       description: "Endpoints relacionados a autenticação",
     },
+    {
+      name: "Flights",
+      description: "Endpoints relacionados a voos",
+    },
+    {
+      name: "Boarding Passes",
+      description: "Endpoints relacionados a cartões de embarque",
+    },
+    {
+      name: "Passengers",
+      description: "Endpoints relacionados a passageiros",
+    },
+    {
+      name: "Aircrafts",
+      description: "Endpoints relacionados a aeronaves",
+    },
   ],
 };
 
