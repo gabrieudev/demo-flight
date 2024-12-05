@@ -56,6 +56,10 @@ const swaggerDefinition = {
       name: "Aircrafts",
       description: "Endpoints relacionados a aeronaves",
     },
+    {
+      name: "Queries",
+      description: "Endpoints relacionados a consultas",
+    },
   ],
 };
 
