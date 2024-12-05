@@ -16,6 +16,8 @@ O projeto foi desenvolvido durante a disciplina de Programação 2, visando o de
 ## Funcionalidades
 
 - Fluxo de autenticação e autorização de usuários utilizando JWT.
+- API documentada com interface Swagger.
+- Endpoint para consulta de teste de carga (adaptado para Swagger, retornando arquivo JSON).
 - Integração com banco de dados SQL Server.
 
 ## Tecnologias
