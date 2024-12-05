@@ -8,15 +8,18 @@ import flightRoutes from "./routes/flightRoutes.js";
 import passengerRoutes from "./routes/passengerRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import boardingPassRoutes from "./routes/boardingPassRoutes.js";
+import queryRoutes from "./routes/queryRoutes.js";
 import corsOptions from "./config/cors.js";
 import swaggerSpec from "./config/swagger.js";
 import swaggerUi from "swagger-ui-express";
+import compression from "compression";
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(compression());
 app.use(cors(corsOptions));
 app.use(express.json());
 
@@ -27,6 +30,7 @@ app.use("/aircrafts", aircraftRoutes);
 app.use("/flights", flightRoutes);
 app.use("/boarding-passes", boardingPassRoutes);
 app.use("/passengers", passengerRoutes);
+app.use("/query", queryRoutes);
 
 async function startServer() {
   try {
