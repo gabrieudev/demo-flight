@@ -8,7 +8,8 @@ const router = Router();
  * /query:
  *   get:
  *     tags: [Queries]
- *     summary: Retorna o resultado do teste de carga em formato JSON para download
+ *     summary: Teste de carga
+ *     description: Retorna o resultado do teste de carga em formato JSON para download
  *     security: []
  *     responses:
  *       200:

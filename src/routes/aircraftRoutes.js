@@ -9,7 +9,8 @@ const router = Router();
  *   get:
  *     tags: [Aircrafts]
  *     security: []
- *     summary: Retorna uma lista de aeronaves
+ *     summary: Listagem de aeronaves
+ *     description: Retorna uma lista de aeronaves
  *     responses:
  *       200:
  *         description: A lista de aeronaves foi retornada com sucesso
@@ -23,7 +24,8 @@ router.get("/", getAllAircrafts);
  * /aircrafts/{id}:
  *   get:
  *     tags: [Aircrafts]
- *     summary: Retorna uma aeronave pelo ID
+ *     summary: Obter aeronave pelo ID
+ *     description: Retorna uma aeronave pelo ID
  *     security: []
  *     parameters:
  *       - in: path

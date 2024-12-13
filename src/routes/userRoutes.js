@@ -14,7 +14,8 @@ const router = Router();
  * @swagger
  * /users:
  *   get:
- *     summary: Obter todos usuários
+ *     summary: Listagem de usuários
+ *     description: Retorna uma lista de usuários
  *     tags: [Users]
  *     security:
  *       - ApiKeyAuth: []
@@ -34,7 +35,8 @@ router.get("/", protect, restrictTo("admin"), getAllUsers);
  * @swagger
  * /users:
  *   post:
- *     summary: Criar um novo usuário
+ *     summary: Registrar um novo usuário
+ *     description: Cria um novo usuário
  *     tags: [Users]
  *     security:
  *       - ApiKeyAuth: []
@@ -75,6 +77,7 @@ router.post("/", protect, restrictTo("admin"), createUser);
  * /users/{id}:
  *   get:
  *     summary: Obter um usuário pelo ID
+ *     description: Retorna um usuário pelo ID
  *     tags: [Users]
  *     security:
  *       - ApiKeyAuth: []
@@ -104,6 +107,7 @@ router.get("/:id", protect, restrictTo("admin", "regular"), getUserById);
  * /users/{id}:
  *   put:
  *     summary: Atualizar um usuário pelo ID
+ *     description: Atualiza um usuário pelo ID
  *     tags: [Users]
  *     security:
  *       - ApiKeyAuth: []
@@ -158,6 +162,7 @@ router.put("/:id", protect, restrictTo("admin", "regular"), updateUser);
  * /users/{id}:
  *   delete:
  *     summary: Deletar um usuário pelo ID
+ *     description: Deleta um usuário pelo ID
  *     tags: [Users]
  *     security:
  *       - ApiKeyAuth: []

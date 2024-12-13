@@ -11,7 +11,8 @@ const router = Router();
  * /passengers:
  *   get:
  *     tags: [Passengers]
- *     summary: Retorna uma lista de passageiros
+ *     summary: Listagem de passageiros
+ *     description: Retorna uma lista de passageiros
  *     security: []
  *     responses:
  *       200:
@@ -26,7 +27,8 @@ router.get("/", getAllPassengers);
  * /passengers/{id}:
  *   get:
  *     tags: [Passengers]
- *     summary: Retorna um passageiro pelo ID
+ *     summary: Obter passageiro pelo ID
+ *     description: Retorna um passageiro pelo ID
  *     security: []
  *     parameters:
  *       - in: path

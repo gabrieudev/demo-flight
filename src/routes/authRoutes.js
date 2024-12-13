@@ -8,6 +8,7 @@ const router = Router();
  * /auth/login:
  *   post:
  *     summary: Login
+ *     description: Realiza o login de um usuário
  *     tags: [Auth]
  *     security: []
  *     requestBody:

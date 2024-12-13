@@ -12,7 +12,8 @@ const router = Router();
  *   get:
  *     tags: [Boarding Passes]
  *     security: []
- *     summary: Retorna uma lista de cartões de embarque
+ *     summary: Listagem de cartões de embarque
+ *     description: Retorna uma lista de cartões de embarque
  *     responses:
  *       200:
  *         description: A lista de cartões de embarque foi retornada com sucesso
@@ -26,7 +27,8 @@ router.get("/", getAllBoardingPasses);
  * /boarding-passes/{id}:
  *   get:
  *     tags: [Boarding Passes]
- *     summary: Retorna um cartão de embarque pelo ID
+ *     summary: Obter cartão de embarque pelo ID
+ *     description: Retorna um cartão de embarque pelo ID
  *     security: []
  *     parameters:
  *       - in: path

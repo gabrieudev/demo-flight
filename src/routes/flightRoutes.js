@@ -8,7 +8,8 @@ const router = Router();
  * /flights:
  *   get:
  *     tags: [Flights]
- *     summary: Retorna uma lista de voos
+ *     summary: Listagem de voos
+ *     description: Retorna uma lista de voos
  *     security: []
  *     responses:
  *       200:
@@ -23,7 +24,8 @@ router.get("/", getAllFlights);
  * /flights/{id}:
  *   get:
  *     tags: [Flights]
- *     summary: Retorna um voo pelo ID
+ *     summary: Obter voo pelo ID
+ *     description: Retorna um voo pelo ID
  *     security: []
  *     parameters:
  *       - in: path
