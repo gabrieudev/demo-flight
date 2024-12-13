@@ -11,7 +11,7 @@
 
 ## Introdução
 
-O projeto foi desenvolvido durante a disciplina de Programação 2, visando o desenvolvimento de uma API web utilizando JavaScript em conjunto com o framework Express.
+Projeto desenvolvido durante a disciplina de Programação 2, utilizando JavaScript com o framework Express para a criação de uma API.
 
 ## Funcionalidades
 
@@ -30,3 +30,14 @@ O projeto foi desenvolvido durante a disciplina de Programação 2, visando o de
 ## Começando
 
 O projeto está hospedado em um cloud service, portanto, você pode acessá-lo através dos endpoints manualmente ou por meio da [documentação](https://demo-flight-production-c887.up.railway.app/docs/#/).
+
+## Participantes
+
+- João Gabriel da Conceição Santos
+- Diogo Leonardo Lima e Silva
+- Gustavo Henrique de Jesus Santos
+- José Thierry dos Santos
+- Mateus Diális Andrade Barbosa
+- Osvaldo Henrique dos Santos Souza
+- Sérgio Andrade dos Santos
+- Tauan dos Anjos Nascimento
