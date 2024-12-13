@@ -9,12 +9,12 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "http://localhost:3000",
-      description: "Servidor de desenvolvimento",
-    },
-    {
       url: "https://demo-flight-production-c887.up.railway.app",
       description: "Servidor de produção",
+    },
+    {
+      url: "http://localhost:3000",
+      description: "Servidor de desenvolvimento",
     },
   ],
   components: {
