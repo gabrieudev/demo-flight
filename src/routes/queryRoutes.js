@@ -9,7 +9,7 @@ const router = Router();
  *   get:
  *     tags: [Queries]
  *     summary: Teste de carga
- *     description: Retorna o resultado do teste de carga em formato JSON para download
+ *     description: Consulta de teste de carga adaptada para a documentação Swagger devido ao seu limite de dados no corpo da resposta. O endpoint retorna um arquivo JSON para download com os dados gerados. Caso a consulta seja realizada através de um client HTTP, o corpo da resposta irá conter os dados em formato JSON.
  *     security: []
  *     responses:
  *       200:
